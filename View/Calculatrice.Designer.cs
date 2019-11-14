@@ -49,7 +49,13 @@
             this.Button_Division = new System.Windows.Forms.Button();
             this.Prec = new System.Windows.Forms.Label();
             this.Button_Dot = new System.Windows.Forms.Button();
+            this.Picture_More = new System.Windows.Forms.PictureBox();
+            this.Titre_2 = new System.Windows.Forms.Label();
+            this.Titre_3 = new System.Windows.Forms.Label();
+            this.Acn_Calcul = new System.Windows.Forms.Label();
+            this.Acn_Rslt = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Leave)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Picture_More)).BeginInit();
             this.SuspendLayout();
             // 
             // Button_7
@@ -277,7 +283,7 @@
             // 
             this.Picture_Leave.BackColor = System.Drawing.Color.Transparent;
             this.Picture_Leave.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Picture_Leave.BackgroundImage")));
-            this.Picture_Leave.Location = new System.Drawing.Point(310, 12);
+            this.Picture_Leave.Location = new System.Drawing.Point(319, 12);
             this.Picture_Leave.Name = "Picture_Leave";
             this.Picture_Leave.Size = new System.Drawing.Size(33, 30);
             this.Picture_Leave.TabIndex = 18;
@@ -324,12 +330,76 @@
             this.Button_Dot.UseVisualStyleBackColor = false;
             this.Button_Dot.Click += new System.EventHandler(this.Button_Dot_Click);
             // 
+            // Picture_More
+            // 
+            this.Picture_More.BackColor = System.Drawing.Color.Transparent;
+            this.Picture_More.Image = ((System.Drawing.Image)(resources.GetObject("Picture_More.Image")));
+            this.Picture_More.Location = new System.Drawing.Point(339, 206);
+            this.Picture_More.Name = "Picture_More";
+            this.Picture_More.Size = new System.Drawing.Size(53, 50);
+            this.Picture_More.TabIndex = 23;
+            this.Picture_More.TabStop = false;
+            this.Picture_More.Click += new System.EventHandler(this.Picture_More_Click);
+            // 
+            // Titre_2
+            // 
+            this.Titre_2.AutoSize = true;
+            this.Titre_2.BackColor = System.Drawing.Color.Transparent;
+            this.Titre_2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Titre_2.ForeColor = System.Drawing.Color.White;
+            this.Titre_2.Location = new System.Drawing.Point(407, 49);
+            this.Titre_2.Name = "Titre_2";
+            this.Titre_2.Size = new System.Drawing.Size(208, 23);
+            this.Titre_2.TabIndex = 24;
+            this.Titre_2.Text = "Précedent calcul :";
+            // 
+            // Titre_3
+            // 
+            this.Titre_3.AutoSize = true;
+            this.Titre_3.BackColor = System.Drawing.Color.Transparent;
+            this.Titre_3.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Titre_3.ForeColor = System.Drawing.Color.White;
+            this.Titre_3.Location = new System.Drawing.Point(407, 174);
+            this.Titre_3.Name = "Titre_3";
+            this.Titre_3.Size = new System.Drawing.Size(230, 23);
+            this.Titre_3.TabIndex = 25;
+            this.Titre_3.Text = "Précedent résultat :";
+            // 
+            // Acn_Calcul
+            // 
+            this.Acn_Calcul.AutoSize = true;
+            this.Acn_Calcul.BackColor = System.Drawing.Color.Transparent;
+            this.Acn_Calcul.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Acn_Calcul.ForeColor = System.Drawing.Color.White;
+            this.Acn_Calcul.Location = new System.Drawing.Point(407, 98);
+            this.Acn_Calcul.Name = "Acn_Calcul";
+            this.Acn_Calcul.Size = new System.Drawing.Size(120, 23);
+            this.Acn_Calcul.TabIndex = 26;
+            this.Acn_Calcul.Text = "Acn_Calcul";
+            // 
+            // Acn_Rslt
+            // 
+            this.Acn_Rslt.AutoSize = true;
+            this.Acn_Rslt.BackColor = System.Drawing.Color.Transparent;
+            this.Acn_Rslt.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Acn_Rslt.ForeColor = System.Drawing.Color.White;
+            this.Acn_Rslt.Location = new System.Drawing.Point(407, 212);
+            this.Acn_Rslt.Name = "Acn_Rslt";
+            this.Acn_Rslt.Size = new System.Drawing.Size(98, 23);
+            this.Acn_Rslt.TabIndex = 27;
+            this.Acn_Rslt.Text = "Acn_Rslt";
+            // 
             // Calculatrice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(355, 400);
+            this.ClientSize = new System.Drawing.Size(640, 400);
+            this.Controls.Add(this.Acn_Rslt);
+            this.Controls.Add(this.Acn_Calcul);
+            this.Controls.Add(this.Titre_3);
+            this.Controls.Add(this.Titre_2);
+            this.Controls.Add(this.Picture_More);
             this.Controls.Add(this.Button_Dot);
             this.Controls.Add(this.Prec);
             this.Controls.Add(this.Button_Division);
@@ -357,6 +427,7 @@
             this.Text = "Calculatrice";
             this.Load += new System.EventHandler(this.Calculatrice_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Leave)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Picture_More)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -384,5 +455,10 @@
         private System.Windows.Forms.Button Button_Division;
         private System.Windows.Forms.Label Prec;
         private System.Windows.Forms.Button Button_Dot;
+        private System.Windows.Forms.PictureBox Picture_More;
+        private System.Windows.Forms.Label Titre_2;
+        private System.Windows.Forms.Label Titre_3;
+        private System.Windows.Forms.Label Acn_Calcul;
+        private System.Windows.Forms.Label Acn_Rslt;
     }
 }

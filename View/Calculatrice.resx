@@ -581,6 +581,19 @@
         AAAASUVORK5CYII=
 </value>
   </data>
+  <data name="Picture_More.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAZpJREFUaEPtlFFOwzAQBXsKqLj/Reh3BUVCAk4Db+1JZG8aNbjBstCO5Mbefa0z
+        cpND8F/4BparENsttzvsGyIeYiHSDPuGiIdYiDTDviHiIRYizbBviHiIhUgz7BsiHmL7i+g3HzQuGmdK
+        FbapwXIVYnflVD5pvGo8UtqGvmAS7xoJyhW0eolM2D1tk1GwkjBoVdDqLWLcllGglPjiOpLIJ9d1GTWO
+        BAyTeMrToUTsnkqZI5GMCnYSH9YVSYJ6IoUctLqKMC9l7J7zyWiyOInUELk0loih6fJk9PGWltluljBy
+        eTwRQ0uTmf5FZyuUItUDlMvDipSPw8UK9te6+jbIpfFENPVv1/zQa1Ie0yyTl2OJ6FJKLB4HCyxOJk/H
+        ERHXT8Kjhn8bJGhX0OotUkrUJ+GxgMYkk6BVQau3iHFbYsKCGrMM5QpavUW2S0zYFzReNE6UKlRPsFyF
+        2L0izxp2L7+T2IJtarBchdhuud1h3xDxEAuRZtg3RDzEQqQZ9g0RD7EQaYZ9Q8RDLESaYd8Q8RDrLxL8
+        CYfDD0kS6Cv/BPAuAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAYEAAAFUCAYAAADCqoC4AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
