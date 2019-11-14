@@ -48,6 +48,7 @@
             this.Picture_Leave = new System.Windows.Forms.PictureBox();
             this.Button_Division = new System.Windows.Forms.Button();
             this.Prec = new System.Windows.Forms.Label();
+            this.Button_Dot = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Leave)).BeginInit();
             this.SuspendLayout();
             // 
@@ -208,9 +209,9 @@
             this.Button_Equal.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Button_Equal.BackgroundImage")));
             this.Button_Equal.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_Equal.ForeColor = System.Drawing.Color.White;
-            this.Button_Equal.Location = new System.Drawing.Point(175, 327);
+            this.Button_Equal.Location = new System.Drawing.Point(241, 77);
             this.Button_Equal.Name = "Button_Equal";
-            this.Button_Equal.Size = new System.Drawing.Size(41, 35);
+            this.Button_Equal.Size = new System.Drawing.Size(83, 35);
             this.Button_Equal.TabIndex = 11;
             this.Button_Equal.Text = "=";
             this.Button_Equal.UseVisualStyleBackColor = false;
@@ -303,11 +304,25 @@
             this.Prec.BackColor = System.Drawing.Color.Transparent;
             this.Prec.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Prec.ForeColor = System.Drawing.Color.White;
-            this.Prec.Location = new System.Drawing.Point(241, 63);
+            this.Prec.Location = new System.Drawing.Point(248, 49);
             this.Prec.Name = "Prec";
             this.Prec.Size = new System.Drawing.Size(76, 23);
             this.Prec.TabIndex = 21;
             this.Prec.Text = "Ancien";
+            // 
+            // Button_Dot
+            // 
+            this.Button_Dot.BackColor = System.Drawing.Color.Transparent;
+            this.Button_Dot.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Button_Dot.BackgroundImage")));
+            this.Button_Dot.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Dot.ForeColor = System.Drawing.Color.White;
+            this.Button_Dot.Location = new System.Drawing.Point(175, 327);
+            this.Button_Dot.Name = "Button_Dot";
+            this.Button_Dot.Size = new System.Drawing.Size(41, 35);
+            this.Button_Dot.TabIndex = 22;
+            this.Button_Dot.Text = ".";
+            this.Button_Dot.UseVisualStyleBackColor = false;
+            this.Button_Dot.Click += new System.EventHandler(this.Button_Dot_Click);
             // 
             // Calculatrice
             // 
@@ -315,6 +330,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(355, 400);
+            this.Controls.Add(this.Button_Dot);
             this.Controls.Add(this.Prec);
             this.Controls.Add(this.Button_Division);
             this.Controls.Add(this.Picture_Leave);
@@ -367,5 +383,6 @@
         private System.Windows.Forms.PictureBox Picture_Leave;
         private System.Windows.Forms.Button Button_Division;
         private System.Windows.Forms.Label Prec;
+        private System.Windows.Forms.Button Button_Dot;
     }
 }

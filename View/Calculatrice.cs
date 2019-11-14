@@ -98,11 +98,6 @@ namespace Calculatrice.View
 
         }
 
-        private void Button_Dot_Click(object sender, EventArgs e)
-        {
-            RichBox.Text += ".";
-        }
- 
         private void Button_Addition_Click(object sender, EventArgs e)
         {
 
@@ -144,6 +139,10 @@ namespace Calculatrice.View
             choix = 4;
         }
 
+        private void Button_Dot_Click(object sender, EventArgs e)
+        {
+
+        }
         private void Button_Equal_Click(object sender, EventArgs e)
         {
           
@@ -182,7 +181,6 @@ namespace Calculatrice.View
 
             
         }
-
         
     }
 }
