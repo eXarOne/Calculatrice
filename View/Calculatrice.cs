@@ -153,7 +153,7 @@ namespace Calculatrice.View
 
         private void Button_Dot_Click(object sender, EventArgs e)
         {
-
+            RichBox.Text += ",";
         }
         private void Button_Equal_Click(object sender, EventArgs e)
         {
@@ -162,9 +162,9 @@ namespace Calculatrice.View
             Get_2 = RichBox.Text.TrimStart(MyChar);
             Prec.Text = "";
             acn_calcul += RichBox.Text; // Prépare l'ancien calcul pour l'extend
-
-            double A = int.Parse(Get_1.ToString());
-            double B = int.Parse(Get_2.ToString());
+            
+            double A = double.Parse(Get_1.ToString());
+            double B = double.Parse(Get_2.ToString());
             
             if (choix == 1)
             {
