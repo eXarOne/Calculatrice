@@ -8,5 +8,6 @@ namespace Calculatrice.Model
 {
     class Addition
     {
+        /*Test git hub*/
     }
 }
