@@ -8,10 +8,10 @@ namespace Calculatrice.Controler
 {
     class Soustraction
     {
+        readonly Model.Soustraction sous = new Model.Soustraction();
         public double Fct_Sous(double A, double B)
         {
-            double rslt = 0;
-            rslt = A - B;
+            double rslt = sous._Sous(A, B);
 
             return rslt;
         }

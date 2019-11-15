@@ -8,10 +8,10 @@ namespace Calculatrice.Controler
 {
     class Multiplication
     {
+        readonly Model.Multiplication mult = new Model.Multiplication();
         public double Fct_Mult(double A, double B)
         {
-            double rslt = 0;
-            rslt = A * B;
+            double rslt = mult._Mult(A, B);
 
             return rslt;
         }

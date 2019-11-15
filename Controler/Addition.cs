@@ -8,10 +8,10 @@ namespace Calculatrice.Controler
 {
     class Addition
     {
+        readonly Model.Addition add = new Model.Addition();
         public double Fct_Add(double A, double B)
         {
-            double rslt = 0;
-            rslt = A + B;
+            double rslt = add._Add(A,B);
 
             return rslt;
         }
