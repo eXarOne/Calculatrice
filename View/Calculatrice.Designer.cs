@@ -54,8 +54,10 @@
             this.Titre_3 = new System.Windows.Forms.Label();
             this.Acn_Calcul = new System.Windows.Forms.Label();
             this.Acn_Rslt = new System.Windows.Forms.Label();
+            this.Menu_Access = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Leave)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Picture_More)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Menu_Access)).BeginInit();
             this.SuspendLayout();
             // 
             // Button_7
@@ -389,12 +391,24 @@
             this.Acn_Rslt.TabIndex = 27;
             this.Acn_Rslt.Text = "Acn_Rslt";
             // 
+            // Menu_Access
+            // 
+            this.Menu_Access.BackColor = System.Drawing.Color.Transparent;
+            this.Menu_Access.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Menu_Access.BackgroundImage")));
+            this.Menu_Access.Location = new System.Drawing.Point(12, 4);
+            this.Menu_Access.Name = "Menu_Access";
+            this.Menu_Access.Size = new System.Drawing.Size(35, 38);
+            this.Menu_Access.TabIndex = 28;
+            this.Menu_Access.TabStop = false;
+            this.Menu_Access.Click += new System.EventHandler(this.Menu_Access_Click);
+            // 
             // Calculatrice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(640, 400);
+            this.Controls.Add(this.Menu_Access);
             this.Controls.Add(this.Acn_Rslt);
             this.Controls.Add(this.Acn_Calcul);
             this.Controls.Add(this.Titre_3);
@@ -428,6 +442,7 @@
             this.Load += new System.EventHandler(this.Calculatrice_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Leave)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Picture_More)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Menu_Access)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -460,5 +475,6 @@
         private System.Windows.Forms.Label Titre_3;
         private System.Windows.Forms.Label Acn_Calcul;
         private System.Windows.Forms.Label Acn_Rslt;
+        private System.Windows.Forms.PictureBox Menu_Access;
     }
 }

@@ -223,5 +223,10 @@ namespace Calculatrice.View
             }
                 
         }//Change la taille de la forms pour pouvoir afficher les précedent calcul
+
+        private void Menu_Access_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
