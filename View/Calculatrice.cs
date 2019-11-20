@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace Calculatrice.View
 {
@@ -225,6 +226,19 @@ namespace Calculatrice.View
         }//Change la taille de la forms pour pouvoir afficher les précedent calcul
 
         private void Menu_Access_Click(object sender, EventArgs e)
+        {
+            Context_Menu.Show(Cursor.Position);
+        }
+        private void StandardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void ProgrammeurToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ScientifiqueToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }

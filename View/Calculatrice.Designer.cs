@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calculatrice));
             this.Button_7 = new System.Windows.Forms.Button();
             this.Button_8 = new System.Windows.Forms.Button();
@@ -55,9 +56,14 @@
             this.Acn_Calcul = new System.Windows.Forms.Label();
             this.Acn_Rslt = new System.Windows.Forms.Label();
             this.Menu_Access = new System.Windows.Forms.PictureBox();
+            this.Context_Menu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.standardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.programmeurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.scientifiqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Leave)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Picture_More)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Menu_Access)).BeginInit();
+            this.Context_Menu.SuspendLayout();
             this.SuspendLayout();
             // 
             // Button_7
@@ -402,6 +408,37 @@
             this.Menu_Access.TabStop = false;
             this.Menu_Access.Click += new System.EventHandler(this.Menu_Access_Click);
             // 
+            // Context_Menu
+            // 
+            this.Context_Menu.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.Context_Menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.standardToolStripMenuItem,
+            this.programmeurToolStripMenuItem,
+            this.scientifiqueToolStripMenuItem});
+            this.Context_Menu.Name = "Context_Menu";
+            this.Context_Menu.Size = new System.Drawing.Size(211, 104);
+            // 
+            // standardToolStripMenuItem
+            // 
+            this.standardToolStripMenuItem.Name = "standardToolStripMenuItem";
+            this.standardToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.standardToolStripMenuItem.Text = "Standard";
+            this.standardToolStripMenuItem.Click += new System.EventHandler(this.standardToolStripMenuItem_Click);
+            // 
+            // programmeurToolStripMenuItem
+            // 
+            this.programmeurToolStripMenuItem.Name = "programmeurToolStripMenuItem";
+            this.programmeurToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.programmeurToolStripMenuItem.Text = "Programmeur";
+            this.programmeurToolStripMenuItem.Click += new System.EventHandler(this.programmeurToolStripMenuItem_Click);
+            // 
+            // scientifiqueToolStripMenuItem
+            // 
+            this.scientifiqueToolStripMenuItem.Name = "scientifiqueToolStripMenuItem";
+            this.scientifiqueToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.scientifiqueToolStripMenuItem.Text = "Scientifique";
+            this.scientifiqueToolStripMenuItem.Click += new System.EventHandler(this.scientifiqueToolStripMenuItem_Click);
+            // 
             // Calculatrice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -443,6 +480,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Leave)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Picture_More)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Menu_Access)).EndInit();
+            this.Context_Menu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -476,5 +514,9 @@
         private System.Windows.Forms.Label Acn_Calcul;
         private System.Windows.Forms.Label Acn_Rslt;
         private System.Windows.Forms.PictureBox Menu_Access;
+        private System.Windows.Forms.ContextMenuStrip Context_Menu;
+        private System.Windows.Forms.ToolStripMenuItem standardToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem programmeurToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem scientifiqueToolStripMenuItem;
     }
 }
